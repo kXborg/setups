@@ -72,8 +72,11 @@ CUSPARSE_SOLVER_NAME="libcudss-linux-sbsa-0.6.0.5_cuda12-archive"
 
 sudo cp -a ${CUSPARSE_SOLVER_NAME}/include/* /usr/local/cuda/include/
 sudo cp -a ${CUSPARSE_SOLVER_NAME}/lib/* /usr/local/cuda/lib64/
-cd ..                                                                                             ls
+cd ..                                                                                             
 rm -rf tmp_cudss                                                                                         
 sudo ldconfig
 ls /usr/local/cuda/lib64 | grep cudss
+
+pip install transformers accelerate huggingface_hub
+
 ```
