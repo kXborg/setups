@@ -80,5 +80,9 @@ ls /usr/local/cuda/lib64 | grep cudss
 pip install transformers accelerate huggingface_hub
 
 pip install pyvips
+pip install einops timm
+pip install pickleshare
+
+# Install bitsandbytes
 
 ```
